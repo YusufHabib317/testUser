@@ -8,7 +8,7 @@ type ServiceProps = {
     icon: LucideIcon;
     title: string;
     subTitle: {
-      id: 0;
+      id: number;
       title: string;
       description: string;
     }[];
