@@ -11,13 +11,13 @@ export default function Hero() {
     <>
       <div
         className={cn(
-          "w-full min-h-screen p-6 md:p-16 flex flex-col justify-center items-center bg-gray-900 text-violet-100 text-xl overflow-hidden",
+          "w-full min-h-screen md:p-16 flex flex-col justify-center items-center bg-gray-900 text-violet-100 text-xl overflow-hidden",
           font.className
         )}
       >
         <Gradient />
 
-        <span className="text-3xl w-4/6 text-center font-semibold leading-loose">
+        <span className="md:text-3xl sm:text-xl text-base w-5/6 text-center font-semibold leading-loose">
           تم تصميم منصتنا لتوفير حل احترافي و موثوق للمحامين الذين يبحثون عن
           المساعدة في مشاكلهم القانونية. ثق في خبرتنا وتجربتنا وتصفح تعقيدات
           القانون واعثر على أفضل نتيجة ممكمنة لقضيتك .{" "}
