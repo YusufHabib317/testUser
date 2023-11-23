@@ -1,3 +1,5 @@
+import ClientOnly from "@/components/ClientOnly";
+
 export const metadata = {
   title: "Testing | Authentication",
 };

@@ -4,13 +4,13 @@ import { services } from "@/constant/services";
 
 import { cn } from "@/lib/utils";
 import Service from "./_components/service";
-import { initialProfile } from "@/lib/initialProfile";
-import { redirectToSignIn } from "@clerk/nextjs";
+
+import { currentUser, redirectToSignIn } from "@clerk/nextjs";
 
 export default async function AboutUSpage() {
-  const profile = await initialProfile();
+  const user = await currentUser();
 
-  if (!profile) {
+  if (!user) {
     return redirectToSignIn();
   }
 
